@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "@plone/volto-quanta": [
+                "addons/volto-quanta/src"
+            ]
+        },
+        "baseUrl": "src"
+    }
+}
