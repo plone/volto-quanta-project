@@ -8,6 +8,7 @@
     "develop": "missdev --config=jsconfig.json --output=addons",
     "preinstall": "if [ -f $(pwd)/node_modules/.bin/missdev ]; then yarn develop; else yarn develop:npx; fi",
     "start": "razzle start",
+    "start-spa": "razzle start --type=spa",
     "postinstall": "yarn omelette && yarn patches",
     "omelette": "ln -sf node_modules/@plone/volto/ omelette",
     "patches": "/bin/bash patches/patchit.sh > /dev/null 2>&1 ||true",
