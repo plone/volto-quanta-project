@@ -22,7 +22,7 @@
     "src/addons/volto-quanta"
   ],
   "addons": [
-    "@plone/volto-quanta"
+    "@plone/volto-quanta:overrideDefaultControls"
   ],
   "jest": {
     "modulePathIgnorePatterns": [
@@ -107,12 +107,7 @@
     "node": "^10 || ^12 || ^14"
   },
   "dependencies": {
-    "@emotion/cache": "11.0.0",
-    "@emotion/core": "11.0.0",
-    "@emotion/css": "11.0.0",
-    "@emotion/hash": "0.8.0",
-    "@emotion/sheet": "1.0.1",
-    "@plone/volto": "10.6.0"
+    "@plone/volto": "13.2.2"
   },
   "devDependencies": {
     "eslint-plugin-prettier": "3.1.3",

@@ -26,6 +26,8 @@ lib/
 omelette
 junit.xml
 
+locales/*.json
+
 cypress/screenshots/
 cypress/videos/
 

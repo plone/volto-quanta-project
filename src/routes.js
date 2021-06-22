@@ -5,7 +5,7 @@
 
 import { App } from '@plone/volto/components';
 import { defaultRoutes } from '@plone/volto/routes';
-import { addonRoutes } from '~/config';
+import config from '@plone/volto/registry';
 import DesignSystem from '@plone/volto-quanta/components/DesignSystem/DesignSystem';
 
 /**
@@ -25,7 +25,7 @@ const routes = [
         component: DesignSystem,
         exact: true,
       },
-      ...(addonRoutes || []),
+      ...(config.addonRoutes || []),
       ...defaultRoutes,
     ],
   },
