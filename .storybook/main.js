@@ -96,7 +96,6 @@ module.exports = {
       ...options,
       plugins: [
         ...options.plugins,
-        ['@babel/plugin-proposal-private-property-in-object', { loose: true }],
         [
           './node_modules/babel-plugin-root-import/build/index.js',
           {
