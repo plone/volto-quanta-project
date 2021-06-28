@@ -4,8 +4,8 @@
   "license": "MIT",
   "version": "1.0.0",
   "scripts": {
-    "develop:npx": "npx -p mrs-developer missdev --config=jsconfig.json --output=addons",
-    "develop": "missdev --config=jsconfig.json --output=addons",
+    "develop:npx": "npx -p mrs-developer missdev --config=jsconfig.json --output=addons --fetch-https",
+    "develop": "missdev --config=jsconfig.json --output=addons --fetch-https",
     "preinstall": "if [ -f $(pwd)/node_modules/.bin/missdev ]; then yarn develop; else yarn develop:npx; fi",
     "start": "razzle start",
     "start-spa": "razzle start --type=spa",

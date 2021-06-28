@@ -2,6 +2,7 @@
   "volto-quanta": {
     "package": "@plone/volto-quanta",
     "url": "git@github.com:plone/volto-quanta.git",
+    "https": "https://github.com/plone/volto-quanta.git",
     "path": "src"
   }
 }
