@@ -108,10 +108,10 @@
     "not dead"
   ],
   "engines": {
-    "node": "^12 || ^14"
+    "node": "^12 || ^14 || ^16"
   },
   "dependencies": {
-    "@plone/volto": "13.6.0"
+    "@plone/volto": "14.0.0-alpha.23"
   },
   "devDependencies": {
     "@storybook/addon-actions": "6.3.1",
@@ -127,9 +127,5 @@
     "stylelint-config-idiomatic-order": "8.1.0",
     "stylelint-config-prettier": "8.0.1",
     "stylelint-prettier": "1.1.2"
-  },
-  "resolutions": {
-    "@plone/volto/react-select": "4.3.1",
-    "@plone/volto/react-select-async-paginate": "0.5.3"
   }
 }
