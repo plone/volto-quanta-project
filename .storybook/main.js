@@ -6,6 +6,7 @@ const fileLoaderFinder = makeLoaderFinder('file-loader');
 const projectRootPath = path.resolve('.');
 const createAddonsLoader = require('@plone/volto/create-addons-loader');
 const lessPlugin = require('@plone/volto/webpack-less-plugin');
+const scssPlugin = require('razzle-plugin-scss');
 
 const createConfig = require('../node_modules/razzle/config/createConfigAsync.js');
 const razzleConfig = require(path.join(projectRootPath, 'razzle.config.js'));
@@ -35,7 +36,7 @@ module.exports = {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    '@storybook/preset-scss',
+    '@storybook/addon-postcss',
   ],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
@@ -63,6 +64,13 @@ module.exports = {
       webpackConfig: config,
       webpackObject: webpack,
       options: {},
+    });
+
+    config = scssPlugin.modifyWebpackConfig({
+      env: { target: 'web', dev: 'dev' },
+      webpackConfig: config,
+      webpackObject: webpack,
+      options: { razzleOptions: {} },
     });
 
     // putting SVG loader on top, fix the fileloader manually (Volto plugin does not

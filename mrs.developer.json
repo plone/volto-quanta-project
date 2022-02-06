@@ -3,6 +3,7 @@
     "package": "@plone/volto-quanta",
     "url": "git@github.com:plone/volto-quanta.git",
     "https": "https://github.com/plone/volto-quanta.git",
-    "path": "src"
+    "path": "src",
+    "branch": "volto14.1.0"
   }
 }
